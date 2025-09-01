@@ -1,0 +1,162 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(230, 242, 255);
+    font-family: Roboto;
+    font-size: large;
+    color: rgba(50,51,50,255);
+}
+
+.header{
+    height: 200px;
+    background-color: rgba(227,223,218,255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+nav{
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    height: 100%;
+}
+
+.logo{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 48px;
+    font-weight: 800;
+    text-decoration: none;
+    color: rgba(50,51,50,255);
+}
+
+.logo img{
+    height: 80%;
+    width: auto;
+    margin-right: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: rgba(50,51,50,255);
+    font-size: 1.5rem;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.main{
+    max-width: 1200px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* wyśrodkowanie dzieci poza h1 */
+    justify-content: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* wszystkie h1 do lewej */
+h1{
+    font-weight: 900;
+    font-size: 45px;
+    text-align: left;
+    width: 100%;
+}
+
+h2{
+    font-weight: 600;
+    font-size: 35px;
+    text-align: center;
+}
+
+.opis{
+    max-width: 1200px;
+    text-align: center;
+}
+
+.opis img{
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    border-radius: 12px;
+}
+
+.projekty{
+    margin-top: 2rem;
+    max-width: 1200px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 0 1rem;
+    /* align-items usunięte, żeby h1 nie były wyśrodkowane */
+}
+
+
+
+.kaktus, .gilgamesz{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;           /* dla responsywności */
+    justify-content: center;   /* wyśrodkowanie reszty treści */
+    text-align: center;
+    gap: 2rem;
+}
+
+.kaktus img, .gilgamesz img{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.kaktus p, .gilgamesz p{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.zaloga, .sponsorzy, #kontakt{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;      /* teksty wyśrodkowane, h1 i tak do lewej */
+}
+
+.sponsorzy{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.sponsorzy img{
+    max-width: 300px;
+}
+
+.members{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.members div{
+    border-bottom: 2px solid black;
+    
+}
