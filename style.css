@@ -1,9 +1,10 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: rgb(230, 242, 255);
+    background-color: rgba(82,144,202,255);
     font-family: Roboto;
     font-size: large;
+    font-weight: bold;
     color: rgba(50,51,50,255);
 }
 
@@ -89,7 +90,7 @@ h2{
     display: block;
     margin: 0 auto;
     width: 50%;
-    border-radius: 12px;
+    
 }
 
 .projekty{
@@ -118,7 +119,6 @@ h2{
     width: 100%;
     max-width: 500px;
     height: auto;
-    border-radius: 12px;
     object-fit: cover;
 }
 
@@ -159,4 +159,98 @@ h2{
 .members div{
     border-bottom: 2px solid black;
     
+}
+ 
+#kontakt div{
+    border-bottom: 2px solid black;
+    
+}
+
+/* --- RESPONSYWNOŚĆ --- */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .logo {
+        font-size: 32px;
+        margin-bottom: 1rem;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .navbar a {
+        font-size: 1.2rem;
+    }
+
+    h1 {
+        font-size: 32px;
+        text-align: center; /* na telefonie lepiej wyśrodkować */
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .opis img {
+        width: 90%;
+    }
+
+    .kaktus, .gilgamesz {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .kaktus img, .gilgamesz img {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .members {
+        gap: 0.5rem;
+    }
+
+    .sponsorzy img {
+        max-width: 200px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: medium; /* trochę mniejsza czcionka */
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .navbar a {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .opis img {
+        width: 100%;
+    }
+
+    .sponsorzy img {
+        max-width: 150px;
+    }
 }
